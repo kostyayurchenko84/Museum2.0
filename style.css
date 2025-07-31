@@ -400,3 +400,64 @@ a.active {
 }
 
 /******Video**********/
+
+.video {
+  padding-top: 55px;
+}
+
+.video-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.video-text {
+  font-family: 'Roboto-Light';
+  font-size: 22px;
+  color: #000;
+  line-height: 39.5px;
+  width: 50%;
+}
+
+.main-video {
+  margin-top: 62px;
+}
+
+.main-wrapper-video-control {
+  position: relative;
+}
+
+.main-video-img {
+  width: 100%;
+}
+
+.main-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: fill 0.5s;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.main-play {
+  .main-play-path-first {
+    transition: fill 0.5s;
+  }
+
+  .main-play-path-second {
+    transition: fill 0.5s;
+  }
+}
+
+.main-play:hover {
+  .main-play-path-first {
+    transition: fill 0.5s;
+    fill: var(--dark-red);
+  }
+
+  .main-play-path-second {
+    transition: fill 0.5s;
+    fill: var(--dark-red);
+  }
+}
