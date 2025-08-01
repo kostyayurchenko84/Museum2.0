@@ -14,12 +14,12 @@
   font-weight: 400;
 }
 .roboto {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 .roboto-bold {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -98,7 +98,8 @@ a:active {
   color: var(--color-gold);
   transition: 0.5s;
 }
-.Visiting h2, .Tickets h2 {
+.Visiting h2,
+.Tickets h2 {
   color: var(--color-gold);
 }
 
@@ -443,16 +444,16 @@ a.active {
   display: flex;
   justify-content: space-between;
   max-width: 1440px;
-  width:100%;
+  width: 100%;
   margin-top: 40px;
   column-gap: 42px;
 }
 
 .video-footer video {
   min-width: 0;
-  max-width: 100%;      
+  max-width: 100%;
   width: 100%;
-  height: auto;      
+  height: auto;
 }
 
 /******Gallery**********/
@@ -462,27 +463,26 @@ a.active {
 
 .gallery-container {
   margin-top: var(--margin);
-  height: 1960px; 
+  height: 1960px;
   overflow: hidden;
   mask-image: linear-gradient(to bottom, #000 90%, transparent 100%);
-
 }
 
 .gallery-table-images {
-  columns: 3;          
-  column-gap: 36px;    
+  columns: 3;
+  column-gap: 36px;
 }
 
 .gallery-image {
   margin-bottom: 20px;
-  width: 100%;         
-  height: auto;       
-  display: inline-block;  
-  break-inside: avoid; 
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  break-inside: avoid;
 }
 
 .gallery-image:first-child,
-.gallery-image:nth-child(11) { 
+.gallery-image:nth-child(11) {
   margin-top: 50px;
 }
 
@@ -495,12 +495,12 @@ a.active {
   display: flex;
   justify-content: space-between;
   gap: 60px;
-  width:100%;
+  width: 100%;
 }
 
 .tickets-image {
   width: 100%;
-  height:auto;
+  height: auto;
 }
 
 .tickets-buy-container {
@@ -510,7 +510,7 @@ a.active {
 }
 
 .tickets-buy-container p {
-  margin: 0 0 15px 0;  
+  margin: 0 0 15px 0;
   font-size: 28px;
   line-height: 33px;
 }
@@ -527,8 +527,7 @@ a.active {
   line-height: var(--font-text-height);
 }
 
-.tickets-radio-form input[type="radio"] {
-
+.tickets-radio-form input[type='radio'] {
   width: 17px;
   height: 17px;
   margin: 0 23px 0 0;
@@ -537,8 +536,8 @@ a.active {
   background: transparent;
 }
 
-.tickets-radio-form input[type="radio"]:checked::before {
-  content: "";
+.tickets-radio-form input[type='radio']:checked::before {
+  content: '';
   position: absolute;
   top: 5px;
   left: 5px;
@@ -548,128 +547,62 @@ a.active {
   border-radius: 50%;
 }
 
-.p-amount {text-align: end;}
-
-.amount-container {
+.amount {
   display: flex;
   flex-direction: column;
-  margin-left: 25px;
+  width: 150px;
+  border: 1px solid red;
 }
-
-
-
-
-.tickets-light {
-  font-family: "Roboto-Light";
-  font-size: 22px;
-  text-align: start;
-}
-
-
-
-.basic-amount,
-.senior-amount {
-  position: relative;
-  width: 148px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.basic-amount {
-  margin-top: 15px;
-}
-
-.tickets-light-basic {
-  margin-top: 9px;
-  margin-bottom: 0;
-}
-
-.tickets-light-senior {
-  margin-top: 10px;
-  margin-bottom: 14px;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+.amount p {
+  text-align: end;
   margin: 0;
 }
 
-.basic-amount input[type="number"],
-.senior-amount input[type="number"] {
-  font-family: "Roboto-Light";
-  font-size: 22px;
-  height: 50px;
+.tickets-amount-container {
+  border: 1px solid red;
+}
+
+.tickets-amount-container p {
+  margin-top: 25px;
+  font-size: var(--font-text);
+  line-height: var(--font-text-height);
+  text-align: left;
+}
+
+.parallax-image {
   width: 100%;
-  text-align: center;
-  border: 3px solid #000;
+  height: 400px;
+  background-image: url('./assets/img/parallax.jpg');
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.amount-minus,
-.amount-plus {
-  position: absolute;
-  height: 40px;
-  width: 40px;
-  padding: 0;
-  border: none;
-  background: none;
-  font-family: "Roboto-Regular";
-  font-size: 32px;
-  cursor: pointer;
-  transition: background 0.5s;
+/******Contacts**********/
+.Contacts {
+  padding: var(--margin) 0;
 }
 
-.amount-minus {
-  left: 5px;
-}
-
-.amount-plus {
-  right: 5px;
-}
-
-.amount-minus:hover,
-.amount-plus:hover {
-  background: #b3b3b3;
-  transition: background 0.5s;
-
-  .icon-minus,
-  .icon-plus {
-    fill: var(--dark-red);
-    transition: fill 0.5s;
-  }
-}
-
-.icon-minus,
-.icon-plus {
+.contacts-down-line {
   display: flex;
-  transition: fill 0.5s;
-  margin-left: 12px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+.contact-list p {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 100%;
+  color: #030303;
 }
 
-.total-text {
-  text-align: end;
-  margin-top: 48px;
-  margin-bottom: 60px;
-  letter-spacing: 1.65px;
-}
-
-.btn-amount {
-  width: 175px;
-  height: 50px;
-  background-color: #000;
-  border: none;
-  color: #ffffff;
-  font-family: "Roboto-Light";
+.contact-list ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  padding: 0;
+  gap: 51px;
+  list-style: none;
   font-size: 22px;
-  letter-spacing: 2px;
-  margin-left: 10px;
-  cursor: pointer;
-  transition: all 0.5s;
-}
-
-.btn-amount:hover {
-  transition: all 0.5s;
-  background: var(--font-gold);
-  color: #000;
+  color: #030303;
 }
