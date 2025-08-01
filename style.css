@@ -99,12 +99,14 @@ a:active {
   transition: 0.5s;
 }
 .Visiting h2,
-.Tickets h2 {
+.Tickets h2,
+.Contacts h2 {
   color: var(--color-gold);
 }
 
 .Visiting .divider,
-.Tickets .divider {
+.Tickets .divider,
+.Contacts .divider {
   margin: 25px 0 var(--margin) 0;
   height: 3px;
   background-color: var(--color-red);
@@ -592,8 +594,6 @@ a.active {
   margin: 0;
   font-size: 28px;
   font-weight: 500;
-  line-height: 100%;
-  color: #030303;
 }
 
 .contact-list ul {
@@ -601,8 +601,79 @@ a.active {
   flex-direction: column;
   margin-top: 50px;
   padding: 0;
-  gap: 51px;
+  gap: 25px;
   list-style: none;
-  font-size: 22px;
+  font-size: var(--font-text);
+  line-height: var(--font-text-height);
   color: #030303;
+}
+.footer .logo {
+  height: 50px;
+  align-items: center;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: var(--margin) 0 55px 0;
+}
+
+.footer-contacts {
+  margin-top: 12px;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.footer-nav-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 25px;
+  column-gap: 150px;
+  margin: 0;
+  padding: 0;
+}
+.social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.social ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border: 1px solid white;
+  border-radius: 24px;
+  padding: 12px;
+}
+.social img:hover,
+.social img:active {
+  border-color: #9d8665;
+  background-color: #710707;
+}
+
+.footer .divider {
+  height: 3px;
+  background-color: #666666;
+}
+.footer-last-string {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #fff;
 }
